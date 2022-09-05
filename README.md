@@ -1,46 +1,20 @@
-# Getting Started with Create React App
+## Summary
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Please use hardcoded values in place of the API for now as I've only got this running on localhost whilst I make tweaks.
 
-## Available Scripts
+You will be able to fetch these variables from the API:
+* Supply of each NFT category (int)
+* USDC price of each NFT category (float)
+* Solana price of eah NFT category (float)
+* Solana Network Status (String) - Normal, Slow, Offline
 
-In the project directory, you can run:
+I'm not sure if you're familiar with how web3 wallets work but if you have any questions just let me know either via Peter or my email is harryjamesrobson02@gmail.com 
 
-### `npm start`
+I've included the Solana network status variable as sometimes Solana can crash or be very slow. It might be worth displaying a banner when slow and disabling buttons when offline just to stop any user confusion but that's up to you guys.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
