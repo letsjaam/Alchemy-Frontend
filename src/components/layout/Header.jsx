@@ -2,8 +2,9 @@ import blackLogo from '../../assets/black_logo.svg';
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import Hamburger from '../Hamburger';
+import PhantomConnectWallet from '../PhantomConnectWallet';
 
-function Header() {
+function Header({walletConnected, setUserAddress, setWalletConnected}) {
   const location = useLocation();
   const [isClicked, setIsClicked] = useState(false);
 
@@ -68,6 +69,9 @@ function Header() {
           >
             FAQ
           </Link>
+          <div className={`cursor-pointer transition-all hover:bg-gray-200 hover:opacity-100 border rounded-lg p-4`}>
+          <PhantomConnectWallet setUserAddress={setUserAddress} walletConnected={walletConnected} setWalletConnected={setWalletConnected}/>
+          </div>
         </nav>
         <Hamburger isClicked={isClicked} handleClick={handleClick} />
       </div>
